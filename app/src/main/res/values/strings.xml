@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">hipages Tweets</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="hipages_tweets">Hipages tweets</string>
+
+
+    <string name="api_key">X4NTQ8Ek1zoHumhmwNmhKhybS</string>
+    <string name="api_secret">utcpufZUJXHHgrtU16ArTsOjFjQQhRbcwzWiubtLlAzLnTBqDv</string>
+</resources>
