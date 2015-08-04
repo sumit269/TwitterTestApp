@@ -1,13 +1,13 @@
 package com.testapp.twittertestapp.rest.service;
 
-import com.testapp.twittertestapp.rest.model.TokenWrapper;
 import com.testapp.twittertestapp.models.Tweets;
+import com.testapp.twittertestapp.rest.model.TokenWrapper;
 
-import retrofit.Callback;
 import retrofit.http.GET;
 import retrofit.http.Header;
 import retrofit.http.POST;
 import retrofit.http.Query;
+import rx.Observable;
 
 /**
  * Created by SumitBhatia on 3/08/15.
@@ -15,12 +15,10 @@ import retrofit.http.Query;
 public interface TwitterService {
 
     @POST("/oauth2/token")
-    void getBearerToken(@Header("Authorization") String authorization,
-                        @Query("grant_type") String client_credentials,
-                        Callback<TokenWrapper> tokenWrapperCallback);
+    Observable<TokenWrapper> getBearerToken(@Header("Authorization") String authorization,
+                                            @Query("grant_type") String client_credentials);
 
     @GET("/1.1/search/tweets.json")
-    void getTweets(@Header("Authorization") String authorization,
-                   @Query("q") String param,
-                   Callback<Tweets> successWrapperCallback);
+    Observable<Tweets> getTweets(@Header("Authorization") String authorization,
+                                 @Query("q") String param);
 }

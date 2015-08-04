@@ -38,8 +38,8 @@ public class TweetsAdapter extends RecyclerView.Adapter<TweetsAdapter.ViewHolder
 
     @Override
     public void onBindViewHolder(ViewHolder viewHolder, int position) {
-//        viewHolder.getNameView().setText(mTweets.getTweetList().get(position).getUser().getName());
-//        viewHolder.getScreenNameView().setText(mTweets.getTweetList().get(position).getUser().getScreen_name());
+        viewHolder.getNameView().setText(mTweets.getTweetList().get(position).getUser().getName());
+        viewHolder.getScreenNameView().setText("@" + mTweets.getTweetList().get(position).getUser().getScreen_name());
         Picasso.with(mContext)
                 .load(mTweets.getTweetList().get(position).getUser().getProfile_image_url())
                 .into(viewHolder.getProfileImageView());
@@ -59,27 +59,27 @@ public class TweetsAdapter extends RecyclerView.Adapter<TweetsAdapter.ViewHolder
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
-        //        private final TextView name;
-//        private final TextView screen_name;
+        private final TextView name;
+        private final TextView screen_name;
         private final ImageView profile_image;
         private final TextView text;
 
         public ViewHolder(View itemView) {
             super(itemView);
 
-//            name = (TextView) itemView.findViewById(R.id.name);
-//            screen_name = (TextView) itemView.findViewById(R.id.screen_name);
+            name = (TextView) itemView.findViewById(R.id.name);
+            screen_name = (TextView) itemView.findViewById(R.id.screen_name);
             profile_image = (ImageView) itemView.findViewById(R.id.profile_pic);
             text = (TextView) itemView.findViewById(R.id.text);
         }
 
-//        public TextView getNameView() {
-//            return name;
-//        }
-//
-//        public TextView getScreenNameView() {
-//            return screen_name;
-//        }
+        public TextView getNameView() {
+            return name;
+        }
+
+        public TextView getScreenNameView() {
+            return screen_name;
+        }
 
         public ImageView getProfileImageView() {
             return profile_image;

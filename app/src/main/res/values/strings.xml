@@ -7,4 +7,5 @@
 
     <string name="api_key">X4NTQ8Ek1zoHumhmwNmhKhybS</string>
     <string name="api_secret">utcpufZUJXHHgrtU16ArTsOjFjQQhRbcwzWiubtLlAzLnTBqDv</string>
+    <string name="action_search">Search</string>
 </resources>
