@@ -21,17 +21,9 @@ public class TweetsAdapter extends RecyclerView.Adapter<TweetsAdapter.ViewHolder
     private Tweets mTweets;
     private Context mContext;
 
-    public TweetsAdapter(Tweets tweets, Context context) {
-        mTweets = tweets;
-        mContext = context;
-    }
-
     public TweetsAdapter(Context context) {
         mContext = context;
     }
-
-//    public TweetsAdapter() {
-//    }
 
     public void setTweetDataSet(Tweets tweets) {
         mTweets = tweets;
@@ -61,11 +53,10 @@ public class TweetsAdapter extends RecyclerView.Adapter<TweetsAdapter.ViewHolder
         return (null != mTweets ? mTweets.getTweetList().size() : 0);
     }
 
-//    @Override
-//    public long getItemId(int position) {
-//        return (mTweets != null ? mTweets.getTweetList().get(position).getId() : -1);
-//
-//    }
+    @Override
+    public long getItemId(int position) {
+        return position;
+    }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
         //        private final TextView name;

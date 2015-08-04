@@ -15,7 +15,7 @@ import android.widget.Spinner;
 import android.widget.Toast;
 
 import com.testapp.twittertestapp.R;
-import com.testapp.twittertestapp.TokenWrapper;
+import com.testapp.twittertestapp.rest.model.TokenWrapper;
 import com.testapp.twittertestapp.adapters.SpinnerAdapter;
 import com.testapp.twittertestapp.adapters.TweetsAdapter;
 import com.testapp.twittertestapp.base.BaseActivity;

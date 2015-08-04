@@ -5,7 +5,7 @@ import android.support.v4.app.Fragment;
 
 import com.testapp.twittertestapp.TwitterTestApp;
 import com.testapp.twittertestapp.models.Error;
-import com.testapp.twittertestapp.service.TwitterService;
+import com.testapp.twittertestapp.rest.service.TwitterService;
 
 import retrofit.RetrofitError;
 

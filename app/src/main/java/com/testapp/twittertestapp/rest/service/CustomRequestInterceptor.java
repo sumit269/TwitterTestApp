@@ -1,4 +1,6 @@
-package com.testapp.twittertestapp;
+package com.testapp.twittertestapp.rest.service;
+
+import com.testapp.twittertestapp.TwitterTestApp;
 
 import retrofit.RequestInterceptor;
 
@@ -15,6 +17,5 @@ public class CustomRequestInterceptor implements RequestInterceptor {
     @Override
     public void intercept(RequestFacade requestFacade) {
         requestFacade.addHeader("Accept", "application/json");
-
     }
 }

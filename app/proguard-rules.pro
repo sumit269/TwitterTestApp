@@ -40,7 +40,6 @@
 -keep class com.squareup.okhttp.** { *; }
 -keep interface com.squareup.okhttp.** { *; }
 -dontwarn com.squareup.okhttp.**
-#-dontwarn retrofit.appengine.UrlFetchClient
 -dontwarn rx.**
 -dontwarn retrofit.**
 # Keep Picasso

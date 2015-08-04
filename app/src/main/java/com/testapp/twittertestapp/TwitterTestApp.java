@@ -2,7 +2,8 @@ package com.testapp.twittertestapp;
 
 import android.app.Application;
 
-import com.testapp.twittertestapp.service.TwitterService;
+import com.testapp.twittertestapp.rest.service.CustomRequestInterceptor;
+import com.testapp.twittertestapp.rest.service.TwitterService;
 
 import retrofit.RestAdapter;
 

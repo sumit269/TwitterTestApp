@@ -1,4 +1,4 @@
-package com.testapp.twittertestapp;
+package com.testapp.twittertestapp.rest.model;
 
 import com.google.gson.annotations.SerializedName;
 

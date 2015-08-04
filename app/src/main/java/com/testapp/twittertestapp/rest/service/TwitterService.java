@@ -1,6 +1,6 @@
-package com.testapp.twittertestapp.service;
+package com.testapp.twittertestapp.rest.service;
 
-import com.testapp.twittertestapp.TokenWrapper;
+import com.testapp.twittertestapp.rest.model.TokenWrapper;
 import com.testapp.twittertestapp.models.Tweets;
 
 import retrofit.Callback;

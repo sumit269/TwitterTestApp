@@ -9,9 +9,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:fontFamily="sans-serif"
-        android:paddingLeft="16dp"
-        android:paddingRight="4dp"
-        android:textColor="#ffffffff"
+        android:paddingLeft="@dimen/listitem_avatar_padding"
+        android:paddingRight="@dimen/listitem_avatar_padding"
+        android:textColor="@android:color/white"
         android:textSize="18sp"
         android:textStyle="bold" />
 
